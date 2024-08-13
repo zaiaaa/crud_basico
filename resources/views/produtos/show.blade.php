@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+        
         <label for="">Nome</label> <br />
         <input type="text" name="nome" id="" value="{{$produto->nome}}">
         <br />
@@ -15,7 +16,7 @@
         <br />
 
         <label for="">Preço</label> <br />
-        <input type="text" name="preco" id="" value="{{$produto->preco}}">
+        <input type="text" name="preco" id="" value="{{ $produto->preco }}">
         <br />
 
         <label for="">Quantidade</label> <br />

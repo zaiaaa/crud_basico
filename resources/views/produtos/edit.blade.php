@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{ route('registrar_produto') }}" method="POST">
+    <form action="{{ route('alterar_produto', ['id' => $produto->id]) }}" method="POST">
         @csrf
         <label for="">Nome</label> <br />
         <input type="text" name="nome" id=""  value="{{$produto->nome}}">
